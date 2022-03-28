@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom'
+import Landing from './pages/Landing'
+import UserCreation from './pages/UserCreation'
+import WorkoutCreation from './pages/WorkoutCreation'
+import WorkoutList from './pages/WorkoutList'
 import './App.css';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route index element={<Landing />} />
+        <Route path='/userCreation' element={<UserCreation />} />
+        <Route path='/workoutCreation' element={<WorkoutCreation />} />
+        <Route path='/workoutList' element={<WorkoutList />} />
+      </Routes>
+
     </div>
   );
 }
