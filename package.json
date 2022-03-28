@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "mongoose": "^6.2.8"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "body-sculptors",
+  "description": "![Body-Sculptors_logo](https://i.ibb.co/VW3TxL8/Body-Sculptors-logos.jpg)",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PinoyColada/Body-Sculptors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PinoyColada/Body-Sculptors/issues"
+  },
+  "homepage": "https://github.com/PinoyColada/Body-Sculptors#readme"
 }
