@@ -40,7 +40,30 @@
 .navbar-style {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
   background-color: #F39766;
   color: white;
+}
 
+.navbar-ulist-style {
+  list-style-type: none;
+}
+
+.navbar-ulist-style .navbar-list-style {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo{
+  height: 75px;
 }
