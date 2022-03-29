@@ -1,3 +1,4 @@
+const db = require('../db');
 const { User, Workout } = require('../models/index')
 
 
