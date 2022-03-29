@@ -7,7 +7,6 @@ const Landing = () => {
         <div className='landing'>
             <Navbar />
             <h1>Body Sculptors</h1>
-            <Link to ='/createUser'>Create a User</Link>
         </div>
     )
 

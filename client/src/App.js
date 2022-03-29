@@ -3,6 +3,7 @@ import Landing from './pages/Landing'
 import UserCreation from './pages/UserCreation'
 import WorkoutCreation from './pages/WorkoutCreation'
 import WorkoutList from './pages/WorkoutList'
+import AboutMe from './pages/AboutMe'
 import './App.css';
 
 
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='/userCreation' element={<UserCreation />} />
         <Route path='/workoutCreation' element={<WorkoutCreation />} />
         <Route path='/workoutList' element={<WorkoutList />} />
+        <Route path='/aboutMe' element={<AboutMe />} />
       </Routes>
 
     </div>

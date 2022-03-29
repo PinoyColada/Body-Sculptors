@@ -1,13 +1,14 @@
 import Navbar from '../components/Navbar'
 
-const WorkoutList = () => {
+const AboutMe = () => {
 
     return (
-        <div className='workoutList'>
+        <div className='aboutMe'>
             <Navbar />
+            
         </div>
     )
 
 }
 
-export default WorkoutList
+export default AboutMe

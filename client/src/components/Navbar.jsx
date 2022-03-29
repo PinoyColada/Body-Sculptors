@@ -9,8 +9,8 @@ const Header = () => {
                 </Link>
             </div>
             <ul className="navbar-ulist-style">
-                <li className="navbar-list-style"><Link to='/createUser' className='navWord'>Create a workout</Link></li>
-                <li className="navbar-list-style"><Link to='/users' className='navWord'>View workout history</Link></li>
+                <li className="navbar-list-style"><Link to='/userCreation' className='navWord'>Create a workout</Link></li>
+                <li className="navbar-list-style"><Link to='/workoutList' className='navWord'>View workout history</Link></li>
                 <li className="navbar-list-style"><Link to='/aboutMe' className='navWord first'>About me</Link></li>
             </ul>
         </nav>

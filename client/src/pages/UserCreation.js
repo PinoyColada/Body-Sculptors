@@ -1,7 +1,11 @@
+import Navbar from '../components/Navbar'
+
 const UserCreation = () => {
 
     return (
         <div className='userCreation'>
+            <Navbar />
+            
         </div>
     )
 
