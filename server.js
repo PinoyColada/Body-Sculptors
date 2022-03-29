@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
-app.use('/', routes);ec
+app.use('/', routes);
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
