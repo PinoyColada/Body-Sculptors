@@ -43,3 +43,10 @@ const getAllWorkout = async (req, res) => {
         return res.status(500).send(error.message);
     }
 }
+
+module.exports = {
+    createUser,
+    getAllUsers,
+    createWorkout,
+    getAllWorkout
+}
