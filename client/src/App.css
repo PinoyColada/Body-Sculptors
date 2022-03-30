@@ -67,3 +67,52 @@ a:hover {
 .logo{
   height: 75px;
 }
+
+.user-form-wrapper {
+  max-width: 30%;
+  min-width: 300px;
+  padding: 50px 30px 50px 30px;
+  margin: 50px auto;   
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+}
+
+.user-form-layout-group {
+  position: relative;
+  margin-top: 30px;
+}
+
+
+.user-form-layout-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #999;
+  background-color: #fff;
+  z-index: 10;
+}
+
+
+.user-form-layout-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+}
+
+.user-form-layout-input:focus {
+  box-shadow: 0 2px 0 0 purple;
+}
+/* From lines 110-118, this allows the arrows to not show in the number input boxes */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
