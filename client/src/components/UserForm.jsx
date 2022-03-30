@@ -22,14 +22,13 @@ const UserForm = () => {
     }
 
     function handleSubmit(e) {
-        console.log("submitted")
         axios({
             url: "http://localhost:3001/userCreation",
             method: 'post',
             data: {
-                username: name,
-                description: age,
-                rating: bodyWeight
+                name: name,
+                age: age,
+                bodyWeight: bodyWeight
             }
         })
     }
