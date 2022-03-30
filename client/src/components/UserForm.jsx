@@ -36,29 +36,27 @@ const UserForm = () => {
 
 
     return (
-        <form class="form-layout" onSubmit={(e) => handleSubmit(e)}>
-            <h1>Gym Form</h1>
-            <ul>
-                <li>
-                    <label for="name">Name</label>
-                    <input type="text" name="Name" onChange={handleChange}/>
-                        <span>Enter your username</span>
-                </li>
-                <li>
-                    <label for="age">Age</label>
-                    <input type="number" name="Age" onChange={handleChange2}/>
-                        <span>Enter your age</span>
-                </li>
-                <li>
-                    <label for="rating">Body Weight</label>
-                    <input type="number" name="Body Weight" onChange={handleChange3}/>
-                    <span>Enter your body weight</span>
-                </li>
-                <li>
-                    <button className='form-layout-button'>Submit</button>
-                </li>
-            </ul>
-        </form>
+        <div>
+            <div class="form-wrapper">
+                <form class="form-layout" onSubmit={(e) => handleSubmit(e)}>
+                    <div class="form-layout-group">
+                        <label class="form-layout-label" for="name"></label>
+                        <input class="form-layout-input" type="text" name="Name" onChange={handleChange} />
+                    </div>
+                    <div class="form-layout-group">
+                        <label class="form-layout-label" for="age"></label>
+                        <input class="form-layout-input" type="number" name="Age" onChange={handleChange2} />
+                    </div>
+                    <div class="form-layout-group">
+                        <label class="form-layout-label" for="body-weight"></label>
+                        <input class="form-layout-input" type="number" name="Body Weight" onChange={handleChange3} />
+                    </div>
+                    <div>
+                        <button className='form-layout-button'>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     )
 }
 
