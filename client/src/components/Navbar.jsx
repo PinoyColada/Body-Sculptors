@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <nav class="navbar-style">
+        <nav className="navbar-style">
             <div>
                 <Link to='/' className='navWord first'>
                     <img className="logo"src="https://i.ibb.co/mtTVYYz/Screen-Shot-2022-03-29-at-6-02-33-PM.png" alt="Body-Sculptors Logo"/>

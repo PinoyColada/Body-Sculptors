@@ -44,15 +44,15 @@ const UserForm = () => {
                         <h1 className='user-form-instruction'>Please enter information about yourself before recording a workout</h1>
                     </div>
                     <div className="user-form-layout-group">
-                        <label className="user-form-layout-label" for="name"></label>
+                        <label className="user-form-layout-label" htmlFor="name"></label>
                         <input className="user-form-layout-input" placeholder="Enter your name" type="text" name="Name" onChange={handleChange} />
                     </div>
                     <div className="user-form-layout-group">
-                        <label className="user-form-layout-label" for="age"></label>
+                        <label className="user-form-layout-label" htmlFor="age"></label>
                         <input className="user-form-layout-input" placeholder="Enter your age" type="number" name="Age" onChange={handleChange2} />
                     </div>
                     <div className="user-form-layout-group">
-                        <label className="user-form-layout-label" for="body-weight"></label>
+                        <label className="user-form-layout-label" htmlFor="body-weight"></label>
                         <input className="user-form-layout-input" placeholder="Enter your body weight" type="number" name="Body Weight" onChange={handleChange3} />
                     </div>
                     <div className='user-form-layout-group'>
