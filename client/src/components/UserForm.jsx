@@ -37,19 +37,19 @@ const UserForm = () => {
 
     return (
         <div>
-            <div class="user-form-wrapper">
-                <form class="user-form-layout" onSubmit={(e) => handleSubmit(e)}>
-                    <div class="user-form-layout-group">
-                        <label class="user-form-layout-label" for="name"></label>
-                        <input class="user-form-layout-input" placeholder="Enter your name" type="text" name="Name" onChange={handleChange} />
+            <div className="user-form-wrapper">
+                <form className="user-form-layout" onSubmit={(e) => handleSubmit(e)}>
+                    <div className="user-form-layout-group">
+                        <label className="user-form-layout-label" for="name"></label>
+                        <input className="user-form-layout-input" placeholder="Enter your name" type="text" name="Name" onChange={handleChange} />
                     </div>
-                    <div class="user-form-layout-group">
-                        <label class="user-form-layout-label" for="age"></label>
-                        <input class="user-form-layout-input" placeholder="Enter your age" type="number" name="Age" onChange={handleChange2} />
+                    <div className="user-form-layout-group">
+                        <label className="user-form-layout-label" for="age"></label>
+                        <input className="user-form-layout-input" placeholder="Enter your age" type="number" name="Age" onChange={handleChange2} />
                     </div>
-                    <div class="user-form-layout-group">
-                        <label class="user-form-layout-label" for="body-weight"></label>
-                        <input class="user-form-layout-input" placeholder= "Enter your body weight" type="number" name="Body Weight" onChange={handleChange3} />
+                    <div className="user-form-layout-group">
+                        <label className="user-form-layout-label" for="body-weight"></label>
+                        <input className="user-form-layout-input" placeholder= "Enter your body weight" type="number" name="Body Weight" onChange={handleChange3} />
                     </div>
                     <div>
                         <button className='user-form-layout-button'>Submit</button>
