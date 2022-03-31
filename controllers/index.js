@@ -33,7 +33,8 @@ const getAllUsers = async (req, res) => {
 
 const createWorkout = async (req, res) => {
     try {
-        const workout = await new Workout(req.body)
+        const workout = await new Workout(
+            req.body);
         await workout.save()
         return res.status(201).json({
             workout,
