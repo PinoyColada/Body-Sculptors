@@ -7,7 +7,7 @@ const createUser = async (req, res) => {
         const user = await new User(req.body)
         await user.save()
         return res.status(201).json({
-            user,
+            user
         });
     } catch (error) {
         return res.status(500).json({ error: error.message })
