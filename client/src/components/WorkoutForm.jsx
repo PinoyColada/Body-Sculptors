@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { useState } from 'react'
-// import { Link } from 'react-router-dom';
 
 
 
@@ -9,7 +8,6 @@ const WorkoutForm = (props) => {
     const [weight, setWeight] = useState(0);
     const [sets, setSets] = useState(0);
     const [reps, setReps] = useState(false);
-    // const [user, setUser] = useState('')
 
     const handleChange = (event) => {
         const target = event.target.value;
@@ -31,15 +29,6 @@ const WorkoutForm = (props) => {
         setReps(target);
     }
 
-    // const getInfo = async () => {
-    //     await axios({
-    //         url: "http://localhost:3001/workoutCreation",
-    //         method: 'get'
-    //     }).then(response => {
-    //         console.log(response)
-    //     })
-    // }
-
     const handleSubmit = async (e) => {
         await axios({
             url: "http://localhost:3001/workoutCreation",
@@ -54,24 +43,11 @@ const WorkoutForm = (props) => {
         })
     }
 
-
-    // useEffect(() => {
-    //     const makeApiCall = async () => {
-    //         let res = await axios.get('http://localhost:3001/workoutCreation')
-    //         setUser(res.data.users)
-    //     }
-    //     makeApiCall();
-    // }, [])
-
     return (
         <div>
             <h1>
-            {/* {user.map((user, i, array) => (
-                    i === array.length -1 ?
-                    <h1>{user.name}</h1>
-                    : console.log("going to last value")
-                ))} */}
-            {props._id}
+            {props.name}, your workout submission has been successful! Feel free to submit another workout or view your entered
+            workouts in the "View workout history" tab
             </h1>
             <div className="user-form-wrapper">
                 <form className="user-form-layout" onSubmit={(e) => [handleSubmit(e)]}>
@@ -103,33 +79,5 @@ const WorkoutForm = (props) => {
         </div>
     )
 }
-
-/* 
-    return (
-        <div className='workoutList'>
-            <Navbar />
-            <section>
-                <h1 className='rec'>Users</h1>
-                <div className='reviewContainer'>
-                {users.map((user, i, array) => (
-                    i === array.length -1 ?
-                    <Users
-                        key={user._id}
-                        id={user._id}
-                        username={user.name}
-                        age={user.age}
-                        bodyWeight={user.bodyWeight}
-                        {...user}
-                    />
-                    : console.log("going to last value")
-                ))}
-                </div>
-            </section>
-            
-            
-        </div>
-    )
-
-*/
 
 export default WorkoutForm;

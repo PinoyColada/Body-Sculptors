@@ -25,6 +25,7 @@ const WorkoutCreation = () => {
                         <WorkoutForm
                             key={user._id}
                             id={user._id}
+                            name={user.name}
                             {...user}
                         />
                         : console.log("going to last value")
