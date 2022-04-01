@@ -29,9 +29,9 @@
 
 ### ***Screenshots***
 
-![Placeholder1](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fd5%2Fe2%2F34%2Fd5e234fdacd6aadf9f3b6acde06c862c.png&f=1&nofb=1)
+![Placeholder1](https://i.ibb.co/Y70StNC/Screen-Shot-2022-04-01-at-12-23-21-PM.png)
 
-![Placeholder2](https://i.ibb.co/2Kd1tGD/Screenshot-2022-03-27-213658.jpg)
+![Placeholder2](https://i.ibb.co/8zm7Pgs/Screen-Shot-2022-04-01-at-12-21-54-PM.png)
 ***
 
 ### ***Future Updates***
