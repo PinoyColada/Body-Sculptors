@@ -1,19 +1,20 @@
 import Navbar from '../components/Navbar'
 import { useEffect, useState } from 'react'
 import Users from '../components/Users'
+import Workouts from '../components/Workouts'
 import axios from 'axios'
 
 const WorkoutList = () => {
     const [users, setUsers] = useState([])
-    // const [workouts, setWorkouts] = useState([])
+    const [workouts, setWorkouts] = useState([])
 
     useEffect(() => {
         const makeApiCall = async () => {
             let res = await axios.get('http://localhost:3001/workoutList')
             setUsers(res.data.users)
 
-            // let res2 = await axios.get('http://localhost:3001/workoutList/:id/workouts')
-            // setWorkouts(res2.data.workouts)
+            let res2 = await axios.get('http://localhost:3001/workoutList/:id/workouts')
+            setWorkouts(res2.data.workouts)
         }
         makeApiCall()
     }, [])
@@ -32,6 +33,19 @@ const WorkoutList = () => {
                             age={user.age}
                             bodyWeight={user.bodyWeight}
                             {...user}
+                        />
+                    ))}
+                </div>
+                <h1>Workouts</h1>
+                <div>
+                {workouts.map((workout) => (
+                        <Workouts
+                            key={workout._id}
+                            exercise={workout.exercise}
+                            weight={workout.weight}
+                            sets={workout.sets}
+                            reps={workout.reps}
+                            {...workout}
                         />
                     ))}
                 </div>
