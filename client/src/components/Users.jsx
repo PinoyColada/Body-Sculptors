@@ -88,7 +88,7 @@ const Users = (props) => {
                                         placeholder="Enter new body weight"
                                         onChange={(e) => handleBodyWeight(e)}
                                     />
-                                    <button className="submit-button" type='submit' onClick={() => updateUserInfo()}>Edit User</button>
+                                    <button className="submit-button" type='submit' onClick={() => updateUserInfo()}>Update User</button>
                                 </div>
                             </td>
                             <td><button onClick={deleteHandler}>Delete</button></td>
