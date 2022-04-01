@@ -10,7 +10,7 @@ const Landing = () => {
                 <source src="video.mp4" type="video/mp4"/>
             </video>
             <h1 className='title'>Welcome to Body Sculptors
-            <p>Scroll down to get started</p>
+            <p>Click the "Create a workout" link to get started</p>
             </h1>
             </div>
         </div>
