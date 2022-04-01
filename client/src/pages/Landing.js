@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 
 const Landing = () => {
@@ -6,7 +5,12 @@ const Landing = () => {
     return (
         <div className='landing'>
             <Navbar />
-            <h1>Body Sculptors</h1>
+            <div className='video-container'>
+            <video autoPlay loop muted>
+                <source src="video.mp4" type="video/mp4"/>
+            </video>
+            </div>
+            <h1 className='title'>Welcome to Body Sculptors</h1>
         </div>
     )
 

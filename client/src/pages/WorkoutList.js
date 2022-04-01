@@ -5,11 +5,15 @@ import axios from 'axios'
 
 const WorkoutList = () => {
     const [users, setUsers] = useState([])
+    // const [workouts, setWorkouts] = useState([])
 
     useEffect(() => {
         const makeApiCall = async () => {
             let res = await axios.get('http://localhost:3001/workoutList')
             setUsers(res.data.users)
+
+            // let res2 = await axios.get('http://localhost:3001/workoutList/:id/workouts')
+            // setWorkouts(res2.data.workouts)
         }
         makeApiCall()
     }, [])
@@ -32,8 +36,6 @@ const WorkoutList = () => {
                     ))}
                 </div>
             </section>
-
-
         </div>
     )
 
