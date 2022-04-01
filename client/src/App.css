@@ -37,6 +37,14 @@
   }
 }
 
+body{
+  background: url("https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?t=st=1648823948~exp=1648824548~hmac=e5c2565f95779d2c86f69e2dbf9fe082533a35d00a961585776ba5e5e7ec8dd0&w=1800");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: '100vw';
+  height: '100vh';
+}
+
 .navbar-style {
   display: flex;
   justify-content: space-around;
