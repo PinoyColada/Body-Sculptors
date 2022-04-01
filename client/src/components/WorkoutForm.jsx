@@ -45,10 +45,6 @@ const WorkoutForm = (props) => {
 
     return (
         <div>
-            <h1>
-            {props.name}, your workout submission has been successful! Feel free to submit another workout or view your entered
-            workouts in the "View workout history" tab
-            </h1>
             <div className="user-form-wrapper">
                 <form className="user-form-layout" onSubmit={(e) => [handleSubmit(e)]}>
                     <div>
