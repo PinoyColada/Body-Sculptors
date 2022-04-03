@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors())
 app.use(express.static(`${__dirname}/client/build`))
 
-app.use('/', routes);
+app.use('/api', routes);
 
 app.get('/*', (req, res) => {
     res.sendFile(`${__dirname}/client/build/index.html`)
