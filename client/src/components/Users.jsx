@@ -8,7 +8,7 @@ const Users = (props) => {
     const [addEditUser, setAddEditUser] = useState(false)
 
     const deleteHandler = async () => {
-        await axios.delete(`https://agile-journey-75895.herokuapp.com/workoutList/${props.id}`)
+        await axios.delete(`/workoutList/${props.id}`)
         window.location.reload();
     }
 
@@ -25,7 +25,7 @@ const Users = (props) => {
     }
 
     const updateUserInfo = async () => {
-        await axios.put(`https://agile-journey-75895.herokuapp.com/workoutList/${props._id}`, {
+        await axios.put(`/workoutList/${props._id}`, {
             name: name,
             age: age,
             bodyWeight: bodyWeight
