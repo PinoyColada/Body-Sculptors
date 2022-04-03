@@ -9,7 +9,7 @@ const Users = (props) => {
 
     const deleteHandler = async () => {
         await axios.delete(`/workoutList/${props.id}`)
-        window.location.reload();
+        window.location.reload(true);
     }
 
     const handleName = (e) => {
@@ -33,7 +33,7 @@ const Users = (props) => {
             .then(function (response) {
                 setAddEditUser(true);
                 console.log(response)
-                window.location.reload();
+                window.location.reload(true);
             })
             .catch(function (error) {
                 console.log(error)

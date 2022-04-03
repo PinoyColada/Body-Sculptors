@@ -41,6 +41,7 @@ const WorkoutForm = (props) => {
                 user_id: props._id
             }
         })
+        window.location.reload(true);
     }
 
     return (
