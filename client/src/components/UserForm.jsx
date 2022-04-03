@@ -40,7 +40,7 @@ const UserForm = () => {
     if (info === true) {
         return (<div className='workoutCreation'>
             <h1> Hello {name}, please press to button to continue </h1>
-            <button><Link to='/workoutCreation' className='navWord'>Create workout</Link></button>
+            <button><Link to='https://agile-journey-75895.herokuapp.com/workoutCreation' className='navWord'>Create workout</Link></button>
             
         </div>)
     } else {
