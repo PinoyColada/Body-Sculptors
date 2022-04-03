@@ -33,7 +33,7 @@ const Users = (props) => {
             .then(function (response) {
                 setAddEditUser(true);
                 console.log(response)
-                window.location.reload(true);
+                window.location.reload(false);
             })
             .catch(function (error) {
                 console.log(error)
