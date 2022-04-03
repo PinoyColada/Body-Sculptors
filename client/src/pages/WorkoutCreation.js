@@ -8,7 +8,7 @@ const WorkoutCreation = () => {
 
     useEffect(() => {
         const makeApiCall = async () => {
-            let res = await axios.get('http://localhost:3001/workoutCreation')
+            let res = await axios.get('https://agile-journey-75895.herokuapp.com/workoutCreation')
             setUsers(res.data.users)
         }
         makeApiCall()

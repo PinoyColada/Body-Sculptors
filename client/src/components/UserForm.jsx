@@ -26,7 +26,7 @@ const UserForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         await axios({
-            url: "http://localhost:3001/userCreation",
+            url: "https://agile-journey-75895.herokuapp.com/userCreation",
             method: 'post',
             data: {
                 name: name,

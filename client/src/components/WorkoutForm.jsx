@@ -31,7 +31,7 @@ const WorkoutForm = (props) => {
 
     const handleSubmit = async (e) => {
         await axios({
-            url: "http://localhost:3001/workoutCreation",
+            url: "https://agile-journey-75895.herokuapp.com/workoutCreation",
             method: 'post',
             data: {
                 exercise: exercise,

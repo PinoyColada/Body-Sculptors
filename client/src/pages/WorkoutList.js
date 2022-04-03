@@ -10,10 +10,10 @@ const WorkoutList = () => {
 
     useEffect(() => {
         const makeApiCall = async () => {
-            let res = await axios.get('http://localhost:3001/workoutList')
+            let res = await axios.get('https://agile-journey-75895.herokuapp.com/workoutList')
             setUsers(res.data.users)
 
-            let res2 = await axios.get('http://localhost:3001/workoutList/:id/workouts')
+            let res2 = await axios.get('https://agile-journey-75895.herokuapp.com/workoutList/:id/workouts')
             setWorkouts(res2.data.workouts)
         }
         makeApiCall()
