@@ -31,7 +31,7 @@ const WorkoutForm = (props) => {
 
     const handleSubmit = async (e) => {
         await axios({
-            url: "/workoutCreation",
+            url: "/workoutCreations",
             method: 'post',
             data: {
                 exercise: exercise,

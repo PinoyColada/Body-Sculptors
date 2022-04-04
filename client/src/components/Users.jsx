@@ -8,7 +8,7 @@ const Users = (props) => {
     const [addEditUser, setAddEditUser] = useState(false)
 
     const deleteHandler = async () => {
-        await axios.delete(`/workoutList/${props.id}`)
+        await axios.delete(`/workoutLists/${props.id}`)
         window.location.reload(true);
     }
 
@@ -25,7 +25,7 @@ const Users = (props) => {
     }
 
     const updateUserInfo = async () => {
-        await axios.put(`/workoutList/${props._id}`, {
+        await axios.put(`/workoutLists/${props._id}`, {
             name: name,
             age: age,
             bodyWeight: bodyWeight

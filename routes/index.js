@@ -2,13 +2,13 @@ const { Router } = require('express');
 const controllers = require('../controllers');
 const router = Router();
 
-router.post('/userCreation', controllers.createUser);
-router.post('/workoutCreation', controllers.createWorkout);
-router.get('/workoutCreation', controllers.getAllUsers);
-router.get('/workoutList', controllers.getAllUsers);
-router.get('/workoutList/:id/workouts', controllers.getAllUserWorkouts);
-router.delete('/workoutList/:id', controllers.deleteUser);
-router.put("/workoutList/:id", controllers.updateUser);
+router.post('/userCreations', controllers.createUser);
+router.post('/workoutCreations', controllers.createWorkout);
+router.get('/workoutCreations', controllers.getAllUsers);
+router.get('/workoutLists', controllers.getAllUsers);
+router.get('/workoutLists/:id/workouts', controllers.getAllUserWorkouts);
+router.delete('/workoutLists/:id', controllers.deleteUser);
+router.put("/workoutLists/:id", controllers.updateUser);
 
 
 module.exports = router;
